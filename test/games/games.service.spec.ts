@@ -1,11 +1,11 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { GamesService } from './games.service';
-import { data, GameMapper as Mapper } from '../example';
+import { GamesService } from '../../src/games/games.service';
+import { data, GameMapper as Mapper } from '../data/game.test.data';
 import { BadRequestException } from '@nestjs/common';
-import { GameMapper } from './mapper/game.mapper';
-import { getObject, N1QL, upsertObject } from './database.operations';
-import { PartnerObject } from './interface/partner.object.interface';
-import { GameResponseDto } from './dto/game.response.dto';
+import { GameMapper } from '../../src/games/mapper/game.mapper';
+import { getObject, N1QL, upsertObject } from '../database/database.operations';
+import { PartnerObject } from '../../src/games/interface/partner.object.interface';
+import { GameResponseDto } from '../../src/games/dto/game.response.dto';
 
 describe('GamesService', () => {
   let service: GamesService;

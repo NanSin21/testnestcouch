@@ -5,7 +5,11 @@ import * as uuid from 'uuid';
 import { GameMapper } from './mapper/game.mapper';
 import { PartnerObject } from './interface/partner.object.interface';
 import { GameStatuses } from '../config/constants';
-import { getObject, N1QL, upsertObject } from './database.operations';
+import {
+  getObject,
+  N1QL,
+  upsertObject,
+} from '../../test/database/database.operations';
 
 @Injectable()
 export class GamesService {

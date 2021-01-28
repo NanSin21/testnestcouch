@@ -1,4 +1,4 @@
-import { data } from './../example';
+import { data } from '../data/game.test.data';
 
 export const N1QL = jest.fn(async (query: string) => {
   if (
